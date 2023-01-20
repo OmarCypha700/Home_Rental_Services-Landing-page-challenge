@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Open+Sans:wght@700&display=swap');
+
+
+#properties{
+    background: #F5F5F5;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0rem 0rem 5rem 0rem;
+}
+
+#properties > section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1rem;
+}
+
+#properties > section > button{
+    padding: 0.7rem 1.5rem;
+    margin-right: 0.5rem;
+    float: right;
+    background: #F4511E;
+    border: none;
+    border-radius: 0.3rem;
+    color: #fff;
+}
+
+#properties > section > button:hover{
+    background: none;
+    color: #F4511E;
+    outline:1px solid#F4511E;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* gap: 2rem; */
+}
+
+.card-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* margin: 30px; */
+  }
+
+.card{
+    position: relative;
+    background: #fff;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0px 34.0693px 36.1986px rgba(0, 0, 0, 0.133714);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card_info{
+    font-family: 'DM Sans', sans-serif;
+    padding: 0rem 0rem 0rem 1rem;
+}
+
+.card_info > .price{
+    font-weight: 700;
+    color: #F4511E;
+}
+
+.card_info > .room{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #818181;
+}
+
+.card_img > img{
+    max-width: 100%;
+    height: auto;
+}
+
+.card_btn{
+    display: flex;
+    justify-content: center;
+}
+
+.card_btn > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 2.3rem;
+    background: #fff;
+    border: none;
+    outline: 1px solid #d7d7d7;
+}
+
+.card_btn > button:hover{
+    background: #F4511E;
+}
+
+.card_btn > .btn1{
+    border-bottom-left-radius: 1rem;
+}
+
+.card_btn > .btn3{
+    border-bottom-right-radius: 1rem;
+}
+
+
+.pagination{
+    text-align: center;
+    margin: 30px 10px 5px;
+    user-select: none;
+  }
+  
+  .pagination li{
+    display: inline-block;
+    margin: 2px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+  }
+  
+  .pagination li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 45px;
+  }
+  
+  .previous-page, .next-page{
+    background: #050505;
+    width: 60px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .previous-page:hover{
+    transform: translateX(-5px);
+  }
+  
+  .next-page:hover{
+    transform: translateX(5px);
+  }
+  
+  .current-page, .dots{
+    background: #ccc;
+    width: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+/* Tablet View */
+
+@media screen and (min-width:769px) {
+    
+    #properties > section > button{
+        padding: 0.7rem 2rem;
+        margin-right: 0.5rem;
+        float: right;
+        background: #F4511E;
+        border: none;
+        border-radius: 0.3rem;
+        color: #fff;
+    }
+    
+    #properties > section > button:hover{
+        background: none;
+        color: #F4511E;
+        outline:1px solid#F4511E;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 1rem;
+    }
+
+    .card{
+        position: relative;
+        background: #fff;
+        width: 40%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0px 34.0693px 36.1986px rgba(0, 0, 0, 0.133714);
+    }
+
+    .card_btn > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 2.2rem;
+        background: #fff;
+        border: none;
+        outline: 1px solid #d7d7d7;
+    }
+
+
+}
+
+
+/* Desktop View */
+
+@media screen and (min-width:968px) {
+    
+    #properties > section > button{
+        padding: 1rem 2rem;
+        margin-right: 2rem;
+        float: right;
+        background: #F4511E;
+        border: none;
+        border-radius: 0.3rem;
+        color: #fff;
+    }
+
+
+    h2{
+        font-size: 2rem;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 2rem;
+    }
+
+    .card{
+        position: relative;
+        background: #fff;
+        width: 25%;
+        height: auto;
+        overflow: hidden;
+        border-radius: 1.2rem;
+        box-shadow: 0px 34.0693px 36.1986px rgba(0, 0, 0, 0.133714);
+    }
+
+    .card_btn > button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 2.6rem;
+        background: #fff;
+        border: none;
+        outline: 1px solid #d7d7d7;
+    }
+
+
+}

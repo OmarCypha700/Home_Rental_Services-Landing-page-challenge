@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+#testimonial{
+    width: 100%;
+    background: rgba(244, 81, 30, 0.07);
+    font-family: 'Open Sans', sans-serif;
+    margin: 5rem 0rem;
+}
+
+.testimonial_container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    gap: 1rem;
+}
+
+.testimony{
+    padding: 3rem 1rem 3rem 0rem;
+}
+
+
+.testimony > p{
+    line-height: 171%;
+}
+
+.testimony > .profile{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.testimony > .profile > div > p{
+    margin-top: -1rem;
+}
+
+.testimony > .profile > div > h4{
+    color: #F4511E;
+}
+
+.testimony > .profile > .img{
+    width: 7%;
+}
+
+.testimony > .profile > div > img{
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #F4511E;
+}
+
+
+/* Tablet View */
+
+@media screen and (min-width:769px) {
+
+    .testimonial_container{
+        width: 90%;
+        flex-direction: row;
+    }
+    
+    .testimony{
+        width: 50%;
+        padding: 3rem 1rem 3rem 0rem;
+    }
+    
+    .ad_video{
+        width: 50%;
+    }
+
+}
+
+
+/* Desktop View */
+
+@media screen and (min-width:968px) {
+    
+    .testimonial_container{
+        width: 80%;
+    }
+
+}

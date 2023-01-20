@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum Living Cost</title>
+
+    <link rel="shortcut icon" href="./Icons/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="prop.css">
+    <link rel="stylesheet" href="flex.css">
+    <link rel="stylesheet" href="addProp.css">
+    <link rel="stylesheet" href="Testimonial.css">
+    <link rel="stylesheet" href="Footer.css">
+    <link rel="stylesheet" href="root.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+
+</head>
+
+<body>
+
+    <header class="main_header">
+
+        <div>
+            <span id="logo">
+                <img src="./Icons/logo.svg" alt="">
+                </span>
+    
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Landlord</a></li>
+                <li><a href="#">Tenants</a></li> 
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>   
+
+        <hr id="home_line"/>
+
+    </header>
+
+    <header class="mobile_header">
+
+        <div class="header">
+            <span class="logo_img">
+                <img src="./Icons/logo.svg" />
+            </span>
+    
+    
+            <button class="hamburger">
+                <span class="bar"></span>
+            </button>
+        </div>
+        
+        <nav class="mobile_nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Landlord</a></li>
+                <li><a href="#">Tenants</a></li> 
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <hr id="home_line"/>
+    
+    </header>
+     
+
+<!-- Home section -->
+<section id="home">
+
+<div id="hero">
+
+    <div class="hero_text">
+        <h1>The Most Affordable Place To Stay In The San Francisco Bay Area</p>
+    </div>
+    
+    <div id="location">
+        <div class="map">
+            <iframe id="mobile_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.149536207993!2d-0.34687868536500593!3d5.544834335303861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdfbd56adbba319%3A0x85c345bfeeabefdf!2sWest%20Hills%20Mall!5e0!3m2!1sen!2sgh!4v1673387055415!5m2!1sen!2sgh" width="350" height="300" style="border:0; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="select_box">
+            <select id="type">
+                <option value="all type">All type</option>
+                <option value="chamber & hall">Chamber & Hall</option>
+                <option value="self contained">Self contained</option>
+                <option value="boys quarters">Boys quarters</option>
+            </select>
+            <select id="neigbourhood">
+                <option value="neigbourhood">Neigbourhood</option>
+                <option value="luna avenue">Luna avenue</option>
+                <option value="blue avenue">Blue avenue</option>
+                <option value="green avenue">Green avenue</option>
+            </select>
+            <div class="search">
+                <img src="./Icons/search.svg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</section>
+
+<!-- About section section begins-->
+<section id="about_section">
+
+    <h2>
+       <span class="text_underline">Minimum Living Cost</span> Takes Care Of Everything
+    </h2>
+
+    <div class="about">
+        <div class="about_img">
+            <img src="./images/cost_img.png" alt="">
+        </div>
+
+        <div class="about_icons">
+            <div>
+                <div class="icon_img">
+                    <img src="./Icons/Pay_little.svg" alt="">
+                </div> 
+                <P>Pay As Little As Possible!</P>
+            </div>
+
+            <div>
+                <div class="icon_img">
+                    <img src="./Icons/community.svg" alt="">
+                </div>
+                
+                <P> Enjoy Wisdom Of Community</P>
+            </div>
+
+            <div>
+                <div class="icon_img">
+                    <img src="./Icons/Landlord.svg" alt="">
+                </div>
+                
+                <P>Let Someone Else Take Care Of The Landlord</P>
+            </div>
+
+            <div>
+                <div class="icon_img">
+                    <img src="./Icons/peacefull_env.svg" alt="">
+                </div>
+                
+                <P>Enjoy Peaceful Environment!</P>
+            </div>
+
+            <div>
+                <div class="icon_img">
+                    <img src="./Icons/saftey.svg" alt="">
+                </div>
+                
+                <P>Stay Safe! Save Money</P>
+            </div>
+
+            <div>
+                <div class="icon_img">
+                    <img src="./Icons/pay_for_use.svg" alt="">
+                </div>
+                
+                <P>Pay For What You Use!</P>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- About section section ends-->
+
+<!-- List of properties section begins -->
+<section id="properties">
+
+    <section>
+        <h2>
+            <span class="text_underline">List</span> Of properties
+        </h2>
+        <button>View All Properties</button>
+    </section>
+    
+<div class="container">
+
+    <div class="card-content" style="display: none;">
+
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img1.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img2.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img3.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img4.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img5.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img6.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img5.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img6.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img5.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img6.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img5.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img6.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img6.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img5.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <div class="card_img"><img src="./images/prop_img6.png" alt=""></div>
+            <div class="card_info">
+                <h3>2578 Folson Street, San Francisco, CA, 94110</h3>
+                <p class="room">Private Room</p>
+                <p class="price">$1200/Month</p>
+            </div>
+            <div class="card_btn">
+                <button class="btn1"> <img src="./Icons/Bed.svg" alt=""> 4</button>
+                <button> <img src="./Icons/Shower.svg" alt=""> 2</button>
+                <button class="btn3"> <img src="./Icons/Size.svg" alt=""> 2</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pagination">
+        <!--<li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
+        <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+        <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+        <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+        <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>-->
+      </div>
+
+</div>
+
+</section>
+<!-- List of properties section ends -->
+
+<!-- Flexibility section begins-->
+ <section id="flexibility"> 
+
+    <div class="flex">
+        <div class="flex_imgs">
+            <div>
+                <div class="flex_img1">
+                    <h4>Flexible Leases</h4>
+                    <img src="./images/flex_img1.png" alt=""> 
+                </div>
+                <div class="flex_img2">
+                    <h4>7-day Happiness Guaranteed</h4>
+                    <img src="./images/flex_img2.png" alt="">    
+                </div>
+            </div>
+            
+            <div>
+                <div class="flex_img3">
+                    <h4>Monthly House Cleaning</h4>
+                    <img src="./images/flex_img3.png" alt="">  
+                </div>
+                <div class="flex_img4">
+                    <h4>Choose Your Own Roommate</h4>
+                    <img src="./images/flex_img4.png" alt="">   
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="flex_writeup">
+            <h2>Flexibility and options to suit your lifstyle</h2>
+            <p> You need it? We got it. We make finding your next home easy, comfortable, and simple. 
+                From our happiness guarantee to our selective roommate finder option. We provide you most desire.
+            </p>
+            <button>Search Rooms</button>
+        </div>
+    </div>
+
+</section> 
+
+<!-- Flexibility section ends-->
+
+<!-- Add new property section begins-->
+<section id="add_property">
+
+    <h3>Your Property With Us And Be confident That Your Room Will Be Filled Out!</h3>
+
+    <div class="prop_container">
+
+        <h2>Add A New Property</h2>
+
+        <form action="">
+
+            <section class="section1">
+                <div>
+                    <label for="name"> Name <span class="required">*</span>
+                    </label>
+                    <input type="text" id="name" required placeholder="Enter Name">
+                </div>
+                
+                <div>
+                    <label for="address"> Address <span class="required">*</span> </label>
+                    <input type="text" id="address" required placeholder="Enter Address">
+                </div>
+                
+                
+                <div>
+                    <label for="unit_numb"> Unit Number <span class="required">*</span> </label>
+                    <input type="number" id="unit_numb" required placeholder="Enter Unit">
+                </div>
+                
+                
+                <div>
+                    <label for=""> City <span class="required">*</span> </label>
+                    <select id="city">
+                        <option value="select_city">Select City</option>
+                        <option value="techiman">Techiman</option>
+                        <option value="sunyani">Sunyani</option>
+                        <option value="Accra">Accra</option>
+                    </select>
+                </div>
+               
+                <div>
+                    <label for=""> State <span class="required">*</span> </label>
+                    <select id="city">
+                        <option value="select_state">Select State</option>
+                        <option value="bono_east">Bono East</option>
+                        <option value="bono">Bono</option>
+                        <option value="Accra">Accra</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for=""> Room Type <span class="required">*</span> </label>
+                    <select id="city">
+                        <option value="select_room_type">Select Room Type</option>
+                        <option value="Single Room">Single Room</option>
+                        <option value="Self Contained">Self Contained</option>
+                        <option value="quarters">Quarters</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="price"> Price <span class="required">*</span> </label>
+                    <input type="text" id="price" required placeholder="Enter price">
+                </div>           
+            
+            </section>
+    
+            <section class="section2">
+
+                <div>
+                    <label for="description"> Description <span class="required">*</span> </label>
+                    <textarea id="description" rows="7" cols="100">
+                    </textarea>
+                </div>
+                
+                <div> 
+                    <label>Upload Photo </label>
+                    <input id="image" type="image" src="" alt="" placeholder="Drag your images here or browse">
+                </div>
+                
+
+            </section>
+
+        </form>
+
+        <button>Add New Property</button>
+
+    </div>
+
+</section>
+<!-- Add new property section ends -->
+
+<!-- Testimonial section begins-->
+<section id="testimonial">
+
+    <div class="testimonial_container">
+
+        <div class="testimony">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius maxime pariatur omnis, incidunt sunt iste blanditiis! Eum, doloribus pariatur laboriosam quae, quod error quidem iusto at corporis molestias et excepturi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="profile">
+                <div class="img"><img src="./images/profile1.jpg" alt=""></div>
+                <div>
+                    <h4>Omar Cypha</h4>
+                    <p>President</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad_video">
+            <iframe width="340" height="450" src="https://www.youtube.com/embed/BtJQX53Syec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</section>
+<!-- Testimonial section ends-->
+
+<!-- Footer section begin-->
+<footer>
+
+<hr class="upper_line">
+
+<div class="footer_container">
+    <div class="logo">
+        <h2>Logo</h2>
+    </div>
+
+    <!--  Contains the location,telephone, and the social media section -->
+    <div class="footer_info">
+
+        <div class="footer_location">
+            <span>
+                <iconify-icon inline icon="material-symbols:location-on" style="color: #f4511e;" width="20" height="40"></iconify-icon>
+                345 Omar Cypha Avennue, Accra
+            </span>
+            <span>
+                <iconify-icon inline icon="ic:baseline-call" style="color: #f4511e;" width="20" height="40"></iconify-icon>
+                (123) 456-7890
+            </span>
+            <span>
+                <iconify-icon inline icon="ic:baseline-print" style="color: #f4511e;" width="20" height="40"></iconify-icon> 
+                (123) 456-7890
+            </span>
+        </div>
+
+        <div class="footer_icon">
+            <p>Social Media</p>
+            <span><iconify-icon inline icon="carbon:logo-facebook" style="color: #f4511e;" width="20" height="40"></iconify-icon></span>
+            <span><iconify-icon inline icon="ri:twitter-fill" style="color: #f4511e;" width="20" height="40"></iconify-icon></span>
+            <span><iconify-icon inline icon="ri:linkedin-fill" style="color: #f4511e;" width="20" height="40"></iconify-icon></span>
+            <span><iconify-icon inline icon="mdi:youtube" style="color: #f4511e;" width="20" height="40"></iconify-icon></span>
+            <span><iconify-icon inline icon="carbon:logo-instagram" style="color: #f4511e;" width="20" height="40"></iconify-icon></span>
+        </div>
+
+    </div>
+</div>
+
+<hr class="lower_line">
+
+<!-- Contains the second part of the footer (ie links and the copyright statement) -->
+<div class="footer_list">
+    <ul class="list">
+        <li>ABOUTUS</li>
+        <li>CONTACT</li>
+        <li>HELP</li>
+        <li>PRIVACY POLICY</li>
+        <li>DISCLAIMER</li>
+    </ul>
+    <div class="copyright">
+        <span > Cpoyright &copy; Minimum Living Cost. All rights reserved. </span>
+    </div>
+</div>
+
+<span> Code by <a href="http:// " target="_blank" > Omar Cypha</a> </span>
+
+</footer>
+<!-- Footer section ends-->    
+
+</body>
+
+<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+<script src="main.js"></script>
+<script src="pagination.js"></script>
+</html>
