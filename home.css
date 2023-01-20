@@ -111,7 +111,7 @@ ul li a {
 
 
 #home{
-    background-image: url(./images/hero_img.png);
+    background-image: url(./images/hero_img.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
