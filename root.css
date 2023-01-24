@@ -2,14 +2,40 @@ body{
     padding: 0rem;
     margin: 0 auto ;
     box-sizing: border-box;
-    width: 100vw;
-    max-width: 1440px;
+    width: 100%;
+    /* max-width: 1440px; */
 }
+
+/* .dark__nav{
+  background: black;
+}
+
+.trasparent__nav{
+  background: transparent;  
+} */
 
 .active{
     background: #F4511E;
   }
   
-  .disable{
+.disable{
     background: #ccc;
   }
+
+.dragenter{
+    background: rgb(208, 207, 207);
+}
+
+.browse{
+    color: #F4511E;
+    cursor: pointer;
+}
+
+#output{
+  position: relative;
+  max-width: 100vw;
+  top: -100%;
+  height: 120px;
+  border-radius: 0.2rem;
+  overflow: auto;
+}

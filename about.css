@@ -2,6 +2,7 @@
 
 #about_section{
     font-family: 'Open Sans', sans-serif;
+    outline: auto;
 }
 
 .about{
@@ -35,6 +36,8 @@
 .about_icons > div > p{
     font-size: 1rem;
     font-weight: 400;
+    text-align: left;
+    line-height: 20px;
 }
 
 .icon_img{
@@ -48,7 +51,7 @@
 
 /* Tablet View */
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
 
     #about_section{
         font-family: 'Open Sans', sans-serif;
@@ -69,7 +72,7 @@
     }
     
     .about_img{
-        width: 40%;
+        width: 30%;
     }
     
     .about_img > img{
@@ -77,7 +80,7 @@
     }
     
     .about_icons{
-        width: 60%;
+        width: 70%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -94,8 +97,9 @@
     
     .about_icons > div > p{
         font-size: 1rem;
-        font-weight: 600;
         width: 70%;
+        line-height: 20px;
+        
     }
     
     .icon_img{
@@ -127,4 +131,3 @@
     }
 
 }
-

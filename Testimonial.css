@@ -5,6 +5,7 @@
     background: rgba(244, 81, 30, 0.07);
     font-family: 'Open Sans', sans-serif;
     margin: 5rem 0rem;
+    outline: auto;
 }
 
 .testimonial_container{
@@ -13,16 +14,36 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    gap: 1rem;
+    gap: 5rem;
 }
 
-.testimony{
-    padding: 3rem 1rem 3rem 0rem;
+.slider{
+    width: auto;
+    overflow: hidden;
 }
 
+.slides{
+    width: 500%;
+    display: flex;
+}
+
+.slides > input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide > .testimony{
+    width: 95%;
+    height: 50%;
+}
 
 .testimony > p{
     line-height: 171%;
+    text-align: left;
 }
 
 .testimony > .profile{
@@ -34,6 +55,7 @@
 
 .testimony > .profile > div > p{
     margin-top: -1rem;
+    text-align: left;
 }
 
 .testimony > .profile > div > h4{
@@ -47,22 +69,82 @@
 .testimony > .profile > div > img{
     width: 100%;
     border-radius: 50%;
-    border: 3px solid #F4511E;
+    border: 2px solid #F4511E;
 }
+
+
+/* CSS for manual navigation begin */
+
+.mannual_navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 20rem;
+    margin-left: -20rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.mannual-btn{
+    border: 2px solid #F4511E;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.mannual-btn:hover{
+    background: #F4511E;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+/* CSS for manual navigation end*/
+
 
 
 /* Tablet View */
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
 
     .testimonial_container{
         width: 90%;
         flex-direction: row;
+        gap: 1rem;
     }
     
     .testimony{
         width: 50%;
         padding: 3rem 1rem 3rem 0rem;
+    }
+
+    .slide > .testimony{
+        width: 95%;
+        height: 200px;
+    }
+
+    .mannual_navigation{
+        margin-top: 22rem;
+    
+    }
+
+    .testimony > .profile > div > p{
+        margin-top: -1rem;
+        text-align: justify;
     }
     
     .ad_video{

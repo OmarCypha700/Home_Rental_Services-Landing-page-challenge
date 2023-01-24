@@ -7,6 +7,7 @@
     max-width: 95%;
     margin: 0 auto;
     padding: 0rem 0rem 5rem 0rem;
+    outline: auto;
 }
 
 #properties > section{
@@ -42,9 +43,7 @@ h2{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
     justify-content: center;
-    /* gap: 2rem; */
 }
 
 .card-content{
@@ -53,7 +52,6 @@ h2{
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    /* margin: 30px; */
   }
 
 .card{
@@ -64,6 +62,7 @@ h2{
     overflow: hidden;
     border-radius: 1rem;
     box-shadow: 0px 34.0693px 36.1986px rgba(0, 0, 0, 0.133714);
+    transition: 1s;
 }
 
 .card:hover{
@@ -163,13 +162,9 @@ h2{
   }
 
 
-
-
-
-
 /* Tablet View */
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
     
     #properties > section > button{
         padding: 0.7rem 2rem;
@@ -214,8 +209,8 @@ h2{
         outline: 1px solid #d7d7d7;
     }
 
-
 }
+
 
 
 /* Desktop View */
@@ -231,7 +226,6 @@ h2{
         border-radius: 0.3rem;
         color: #fff;
     }
-
 
     h2{
         font-size: 2rem;

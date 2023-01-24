@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
 
+#flexibility{
+    outline: auto;
+}
+
 .flex{
     width: 100%;
     display: flex;
@@ -50,8 +54,6 @@
     width: 40%;
     height: 285px;
     margin-top: -5rem;
-    /* animation-name: flex_img3_slidein;
-    animation-duration: 4s; */
 }
 
 .flex_imgs > div > .flex_img4{
@@ -59,8 +61,6 @@
     width: 60%;
     height: 356px;
     margin-top: -4rem;
-    /* animation-name: flex_img4_slidein;
-    animation-duration: 4s; */
 }
 
 .flex_imgs > div > div > img {
@@ -95,6 +95,8 @@
     font-weight: 400;
     font-size: 0.8rem;
     margin-top: -1rem;
+    line-height: 20px;
+    text-align: left;
 }
 
 .flex_writeup > button{
@@ -115,7 +117,7 @@
 
 /* Tablet View */
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:768px) {
     
     .flex{
         width: 95%;
@@ -129,7 +131,6 @@
         flex-direction: column;
     }
     
-    
     .flex_imgs > div > .flex_img2{
         margin-top: 2rem;
     }
@@ -142,9 +143,12 @@
         margin-top: -5rem;
     }
 
-
     .flex_writeup{
         width: 50%;
+    }
+
+    .flex_writeup > P{
+        line-height: 17px;
     }
 
 }
@@ -171,15 +175,15 @@
         font-size: 2rem;
     }
     
-    .flex_writeup > p{
+    .flex_writeup > p {
         padding: 2rem;
         font-size: 1rem;
+        line-height: 20px;
     }
 
     .flex_writeup > button{
         margin-left: 2rem;
         padding: 0.7rem 2rem;
     }
-
 
 }
