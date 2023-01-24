@@ -15,7 +15,7 @@
     left: 0;
     margin: 1rem 0rem 0rem 0rem;
     z-index: 99;
-    outline: auto;
+    /* outline: auto; */
 }
 
 .logo_img{
@@ -118,7 +118,7 @@ ul li a {
     background-size: cover;
     background-position: center;
     height: 100vh;
-    outline: auto;
+    /* outline: auto; */
 }
 
 #hero{
