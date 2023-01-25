@@ -11,56 +11,20 @@ window.onload =  () => {
         mobile_menu.classList.toggle('is-active');
     });
 
-
    // Nav scroll to turn background to black
 
-   const mobileScrollNav = document.querySelector(".mobile_header");
-   const desktopScrollNav = document.querySelector(".main_header"); 
+   const mobileNavbar = document.querySelector(".mobile_header");
+   const desktopNavbar = document.querySelector('.main_header');
 
-   window.onscroll = function () {
-
-       if ( window.innerWidth >= 320 && window.pageYOffset > 0 ) {
-           mobileScrollNav.classList.add("dark__nav");
-           mobileScrollNav.classList.remove("transparent__nav");
-       }
-       else if (window.innerWidth >= 769 && window.pageYOffset > 0) {
-           desktopScrollNav.classList.add("dark__nav");
-           desktopScrollNav.classList.remove("transparent__nav");
-       } 
-       else{
-        if (mobileScrollNav) {
-          mobileScrollNav.classList.add("transparent__nav");
-          mobileScrollNav.classList.remove("dark__nav");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 0) {
+        mobileNavbar.classList.add("scrolled");
+        desktopNavbar.classList.add("scrolled");
+      } else {
+        mobileNavbar.classList.remove("scrolled");
+        desktopNavbar.classList.remove("scrolled");
       }
-      if (desktopScrollNav) {
-          desktopScrollNav.classList.add("transparent__nav");
-          desktopScrollNav.classList.remove("dark__nav");
-      }
-       }
-
-   }; 
-
-  //  window.onscroll = function () {
-  //   const mobileScrollNav = document.getElementById("mobile_header");
-  //   const desktopScrollNav = document.getElementById("main_header");
-
-  //      if ( window.innerWidth <= 480 && window.pageYOffset > 0 ) {
-  //          mobileScrollNav.classList.add("dark__nav");
-  //          mobileScrollNav.classList.remove("transparent__nav");
-  //      }
-  //      else if (window.innerWidth >= 768 && window.pageYOffset > 0) {
-  //          desktopScrollNav.classList.add("dark__nav");
-  //          desktopScrollNav.classList.remove("transparent__nav");
-  //      } 
-  //     //  else{
-  //     //      mobileScrollNav.classList.add("transparent__nav");
-  //     //      desktopScrollNav.classList.add("transparent__nav");
-  //     //      mobileScrollNav.classList.remove("dark__nav");  
-  //     //      desktopScrollNav.classList.remove("dark__nav");
-  //     //  }
-
-  //  }; 
-
+    });
 
     //  Images animation on scroll
 

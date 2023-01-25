@@ -7,7 +7,6 @@
 }
 
 .mobile_header{
-    display: block;
     width: 100vw;
     position: fixed;
     top: -1.5%;
@@ -15,7 +14,11 @@
     left: 0;
     margin: 1rem 0rem 0rem 0rem;
     z-index: 99;
-    /* outline: auto; */
+    transition: background-color 0.5s;
+}
+
+.mobile_header.scrolled{
+    background-color: black;
 }
 
 .logo_img{
@@ -27,14 +30,6 @@
     justify-content: space-between;
     align-items: center;
 }
-
-.dark__nav{
-    background: black;
-  }
-  
-  .trasparent__nav{
-    background: transparent;  
-  }
 
 .hamburger{
     position: relative;
@@ -76,7 +71,7 @@
     top: 0;
     left: 100%;
     width: 60%;
-    height: 90vh;
+    height: 100vh;
     display: block;
     background-color: black;
     z-index: 1;
@@ -208,6 +203,11 @@ select{
         display: block;
         position: fixed;    
         z-index: 99;
+        transition: background-color 0.5s;
+    }
+
+    .main_header.scrolled{
+        background-color: black;
     }
 
     .main_header > div{

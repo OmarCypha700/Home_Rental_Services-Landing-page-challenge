@@ -4,10 +4,30 @@
  This is a fully responsive web landing page for a Home rental company.
 
 ## Mobile view
+![Mobile view](./screenshots/Mobile1.png)
 
+![Mobile view](./screenshots/Mobile2.png)
+
+![Mobile view](./screenshots/Mobile3.png)
+
+![Mobile view](./screenshots/Mobile4.png)
+
+![Mobile view](./screenshots/Mobile5.png)
+
+![Mobile view](./screenshots/Mobile6.png)
 
 ## Desktop view
+![Desktop view](./screenshots/Desktop1.png)
 
+![Desktop view](./screenshots/Desktop2.png)
+
+![Desktop view](./screenshots/Desktop3.png)
+
+![Desktop view](./screenshots/Desktop4.png)
+
+![Desktop view](./screenshots/Desktop5.png)
+
+![Desktop view](./screenshots/Desktop6.png)
 
 ## My Process
 ### Built with
